@@ -67,20 +67,6 @@ public class SmsController : MonoBehaviour
             }
             switch (day) {
                 case 0:
-                    /*
-                    if (s == "startsaw" || s == "startheard") {
-                        days[0][0].SetActive(false);
-                        days[0][1].SetActive(true);
-                    }
-                    if (s == "midsomething") {
-                        days[0][1].SetActive(false);
-                        days[0][2].SetActive(true);
-                    }
-                    if (s == "endinside" || s == "endoutside") {
-                        choiceAllowed = false;
-                        sendButton.SetActive(true);
-                    }
-                    */
                     break;
                 case >= 1 and <= 5:
                     if (s == "startsaw" || s == "startheard") {
@@ -173,7 +159,6 @@ public class SmsController : MonoBehaviour
                 tryString += "event";
                 break;
         }
-        // TODO:
         previewText.SetText(textString);
     }
 
